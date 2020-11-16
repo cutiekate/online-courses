@@ -89,22 +89,19 @@ label{
   width: 100%;
   margin-bottom: 0px;
 }
-#error-msg-1, 
 #valid-msg-1,
-#error-msg-2, 
-#valid-msg-2,
-#error-msg-3, 
+#valid-msg-2, 
 #valid-msg-3{
   position: absolute;
   right: 10px;
   top: 27px;
   font-size: 12px;
-  color: #195B84;
+  color: #FFFFFF;
 }
 #error-msg-1,
 #error-msg-2,
 #error-msg-3 {
-  color: #195B84;
+  color: #FFFFFF;
 }
 #valid-msg-1,
 #valid-msg-2,
@@ -123,8 +120,11 @@ label{
   position: relative;
   top: -10px;
   text-align: center;
-  color: var(--main);
+  color: #FFFFFF;
 }  
+.msg {
+  color: #FFFFFF
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -328,6 +328,7 @@ button span img{
   margin-left: -245px;
   margin-right: -118px;
   padding-left: 245px;
+  padding-right: 126px;
   padding-top: 18px;
   padding-bottom: 18px;
 }
@@ -335,3 +336,74 @@ button span img{
 .form-footer {
   margin-top: 65px;
 }
+
+.footer {
+  background: var(--black);
+  border-top: 1px solid rgba(234, 234, 234, 0.4);;
+ }
+
+ .footer-logo {
+   margin-top: 30px;
+ }
+ .footer__info {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   margin-top: 20px;
+ }
+
+ .footer__text {
+  font-family: "Lato" ,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+ }
+ .footer__info a {
+   display: flex;
+   align-items: center;
+ }
+
+ .footer__info a span {
+  background: var(--bg);
+  padding: 2px 26px;
+  border-radius: 5px;
+  font-family: "Open Sans",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #606060;
+ }
+
+ .footer__info a img {
+  margin-right: 13px;
+ }
+
+ .line {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin-top: 23px;
+  margin-bottom: 10px;
+ }
+
+ .footer__rights {
+  font-family: "Lato",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 200%;
+  color: rgba(255, 255, 255, 0.7);
+ }
+
+ .footer__politics {
+  font-family: "Lato",sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 200%;
+  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: end;
+ }

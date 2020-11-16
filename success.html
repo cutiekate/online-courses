@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отлично!</title>
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <style>
+     .success {
+         background: #2D2D2D;
+     }
+     .success__desc {
+        font-family: "Roboto" ,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 117px;
+     }
+     .success h2 {
+        font-family: "Roboto" ,sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 77px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+     }
+
+     .success__text {
+        font-family: "Roboto",sans-serif;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        margin-top: 37px;
+        margin-bottom: 118px;
+     }
+
+     .book-img {
+        margin-top: 140px;
+        margin-left: 5px;
+     }
+    
+
+     @media screen and (max-width: 1024px) {
+        .success__text {
+            margin-bottom: 485px;
+       }
+       .footer-success {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+     }
+
+     .success h2 {
+        font-size: 48px;
+        line-height: 67px;
+    
+     }  
+     }
+
+     @media screen and (max-width: 768px) {
+        .success h2 {
+            font-size: 35px;
+            line-height: 49px;
+        }
+        .book-img {
+            margin-top: 213px;
+            margin-left: -85px;
+        }
+        .success__text {
+            margin-bottom: 90px;
+        }
+    }
+
+    @media screen and (max-width: 414px) {
+        .success__info {
+            min-width: 100%;
+        }
+        .success__book {
+            display: none;
+        }
+
+        .success__desc {
+            margin-top: 30px;
+        }
+
+        .success h2 {
+            font-size: 22px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .success__text {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+    }
+
+        @media screen and (max-width: 375px) {
+            .success__text {
+            margin-bottom: 176px;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            .footer-success {
+                position: static;
+                margin-top: 0;
+            }
+            .success__text {
+                margin-bottom: 35px;
+            }
+            .success h2 {
+                font-size: 19px;
+                line-height: 30px;
+                text-align: center;
+            }
+        }
+  
+    </style>
+</head>
+
+<section class="success">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 success__info">
+                <p class="success__desc">бесплатный видеокурс и PDG </p>
+                <h2>КАК ВЫБРАТЬ<br> НАДЕЖНОГО БРОКЕРА</h2>
+                <p class="success__text">На данный момент наши менеджеры подготавливают для вас руководство. 
+                    В ближайшее время они свяжутся с вами 
+                    для подтверждения. 
+                    В этом руководстве собраны актуальные рекомендации и правила по выбору брокера с низким спредом.</p>
+            </div>
+            <div class="col-6 success__book">
+              <img class="book-img" src="./img/book+bg.png" alt="book">
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer class="footer footer-success">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+         <img class="footer-logo" src="img/logo.png" alt="logo"> 
+        </div>
+        <div class="col-6 footer__info">
+          <p class="footer__text">Получите консультацию по телефону!</p>
+          <a href="tel:+7 495 009-04-67"><img src="./img/phone-icon.png" alt="phone-icon"><span>+7 495 009-04-67</span></a>
+          <p class="footer__text">с 10:00 до 19:00 Пн-Пт</p>
+        </div>
+      </div>
+      <div class="row line"></div>
+      <div class="row">
+        <div class="col-6">
+          <p class="footer__rights">© 2020. Все права защищены.</p>
+        </div>
+        <div class="col-6">
+          <a href="conf.pdf"><p class="footer__politics">Политика конфиденциальности</p></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<body>
+
+ 
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

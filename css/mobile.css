@@ -9,6 +9,10 @@
         padding-bottom: 68px;
         padding-left: 30px;
     }
+
+    .book-bg p {
+        font-size: 17px;
+    }
     
 }
 
@@ -150,7 +154,7 @@
         background-position: 0px 60px;
     }
     .header__head {
-        font-size: 22px;
+        font-size: 24px;
         text-align: center;
         margin-top: 25px;
         line-height: 40px;
@@ -238,6 +242,13 @@
     .book-bg img {
         width: 40%;
     }
+    .footer__info {
+        min-width: 100%;
+        align-items: flex-start;
+    }
+    .footer {
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -272,6 +283,12 @@
 
     .book-bg p {
         padding-left: 280px;
+    }
+    .section-3 {
+        margin-top: 0;
+    }
+    .footer {
+        margin-top: 0;
     }
 
 }
@@ -318,6 +335,12 @@
     .book-bg p {
         padding-left: 250px;
         margin-right: -82px;
+    }
+
+    .footer__politics,
+    .footer__rights,
+    .footer__text {
+        font-size: 12px;
     }
 
 }
