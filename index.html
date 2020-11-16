@@ -11,12 +11,188 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/intlTelInput.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 header__logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="logo">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-7 header__info">
+            <h1 class="header__head">Как выбрать надежного брокера? </h1>
+            <p class="header__text">Мы подготовили небольшое руководство для<br> начинающих и опытных трейдеров, которое <br>поможет выбрать правильную компанию. Курс<br> состоит из 3 видеоуроков и PDF.</p>
+        </div>
+        <div class="col-5 header__form">
+          <form id="form-2" class="form">
+            <h4>Заполните форму<br> и получите бесплатно</h4>
+            <div class="form-input">
+
+                <input class="form-control form__input form__input--user-img" type="text" id="name-2" placeholder="Ваше имя" required>
+                <span class="msg-help-2 name-span-2" style="display:none;">Укажите имя, что бы мы знали как обращаться к Вам</span>
+                <input  class="form-control form__input form__input--email-img" type="email" id="mail-2" placeholder="Ваш Email" pattern="^[-._A-Za-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
+                <span class="msg-help-2 mail-span-2" style="display:none;">Укажите Ваш реальный Email</span>
+                <label for="phone-2" id="label-phone-2">
+                    <input  class="form-control form__input form__input--phone-img" type="tel" placeholder="Телефон" id="phone-2" maxlength="16" required>
+                    <span class="msg-help-2 tel-span-2" style="display:none;">Укажите номер в международном формате</span>
+                    <span id="valid-msg-2" class="hide">✓ Отлично</span>
+                    <span id="error-msg-2" class="hide"></span>
+                </label>
+
+              <input type="hidden" id="last_name-2" value=" ">
+              <input type="hidden" id="ip-2" value="<?= $_SERVER['REMOTE_ADDR']; ?>">
+              <input type="hidden" id="country-2" value="">
+              <input type="hidden" id="prefix-2" value="">
+              <input type="hidden" id="lang-2" value="RU">
+              <input type="hidden" id="utm_source-2" value="<?= $_GET['utm_source']; ?>">
+              <input type="hidden" id="utm_medium-2" value="<?=  $_GET['utm_medium']; ?>">
+              <input type="hidden" id="utm_campaign-2" value="<?= $_GET['utm_campaign']; ?>">
+              <input type="hidden" id="utm_term-2" value="<?= $_GET['utm_term'];?>">
+              <input type="hidden" id="utm_content-2" value="<?= $_GET['utm_content']; ?>">
+              <input type="hidden" id="description-2" value="">
+
+            </div>
+            <div class="form-button">
+              <button type="submit" id="button-2" class="sub btn_yellow form__button">
+                <span>ПОЛУЧИТЬ БЕСПЛАТНО</span>
+              </button>
+              <p class="msg"></p>
+            </div>
+          </form>
+        </div>
+      
+      </div>
+    </div>
+  </header>
+  <section class="section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section-1__header">Преимущества курса</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 section-1__item">
+          <div>
+            <span>0<span class="orange-text">1</span></span>
+          </div>
+          <p>Вы узнаете, как не попасть на крючок к мошенникам 
+          </p>
+        </div>
+        <div class="col-3 section-1__item">
+          <div>
+            <span>0<span class="orange-text">2</span></span>
+          </div>
+          <p>Руководство полезно и новичкам, и опытным трейдерам
+          </p>
+        </div>
+        <div class="col-3 section-1__item">
+          <div>
+            <span>0<span class="orange-text">3</span></span>
+          </div>
+          <p>У вас будет представление о том, как работает брокер
+          </p>
+        </div>
+        <div class="col-3 section-1__item">
+          <div>
+            <span>0<span class="orange-text">4</span></span>
+          </div>
+          <p>Вы узнаете на что необходимо обратить внимание при выборе компании
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-2">
+    <div class="container">
+      <div class="row background-orange">
+        <div class="col-7 section-2__carousel">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="./img/slider-1.png" alt="feedback">
+            </div>
+            <div class="item">
+              <img src="./img/slider-2.png" alt="feedback">
+            </div>
+            <div class="item">
+              <img src="./img/slider-3.png" alt="feedback">
+            </div>
+            <div class="item">
+              <img src="./img/slider-4.png" alt="feedback">
+            </div>
+            <div class="item">
+              <img src="./img/slider-5.png" alt="feedback">
+            </div>
+        </div>
+        </div>
+        <div class="col-6 section-2__info">
+          <h2>Отзывы клиентов, которые прошли курс</h2>
+          <p>Наш курс помог многим опытным и начинающим трейдерам выбрать себе подходящего посредника. Мы гордимся своим результатом и всегда рады прочитать комментарии наших пользователей. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-7 section-3__info">
+          <h2>Как получить?</h2>
+          <p>Оставьте свои данные и вы получите качественное пособие по выбору брокера. Оно поможет вам распознавать аферистов и подобрать для себя качественную компанию.
+          </p>
+          <div class="book-bg">
+            <p>Также мы подготовили специальный бонус</p>
+            <img src="./img/book.png" alt="book">
+          </div>
+        </div>
+        <div class="col-5 section-3__form">
+          <form id="form-3" class="form form-footer">
+            <h4>Заполните форму<br> и получите бесплатно</h4>
+            <div class="form-input">
+
+                <input class="form-control form__input form__input--user-img" type="text" id="name-3" placeholder="Ваше имя" required>
+                <span class="msg-help-3 name-span-3" style="display:none;">Укажите имя, что бы мы знали как обращаться к Вам</span>
+                <input  class="form-control form__input form__input--email-img" type="email" id="mail-3" placeholder="Ваш Email" pattern="^[-._A-Za-z0-9]+@(?:[a-z0-9][-a-z0-9]+\.)+[a-z]{2,6}$" required>
+                <span class="msg-help-3 mail-span-3" style="display:none;">Укажите Ваш реальный Email</span>
+                <label for="phone-3" id="label-phone-3">
+                    <input  class="form-control form__input form__input--phone-img" type="tel" placeholder="Телефон" id="phone-3" maxlength="16" required>
+                    <span class="msg-help-3 tel-span-3" style="display:none;">Укажите номер в международном формате</span>
+                    <span id="valid-msg-3" class="hide">✓ Отлично</span>
+                    <span id="error-msg-3" class="hide"></span>
+                </label>
+
+              <input type="hidden" id="last_name-3" value=" ">
+              <input type="hidden" id="ip-3" value="<?= $_SERVER['REMOTE_ADDR']; ?>">
+              <input type="hidden" id="country-3" value="">
+              <input type="hidden" id="prefix-3" value="">
+              <input type="hidden" id="lang-3" value="RU">
+              <input type="hidden" id="utm_source-3" value="<?= $_GET['utm_source']; ?>">
+              <input type="hidden" id="utm_medium-3" value="<?=  $_GET['utm_medium']; ?>">
+              <input type="hidden" id="utm_campaign-3" value="<?= $_GET['utm_campaign']; ?>">
+              <input type="hidden" id="utm_term-3" value="<?= $_GET['utm_term'];?>">
+              <input type="hidden" id="utm_content-3" value="<?= $_GET['utm_content']; ?>">
+              <input type="hidden" id="description-3" value="">
+
+            </div>
+            <div class="form-button">
+              <button type="submit" id="button-3" class="sub btn_yellow form__button">
+                <span>ПОЛУЧИТЬ БЕСПЛАТНО</span>
+              </button>
+              <p class="msg"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   
 
 
@@ -26,6 +202,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/intlTelInput.min.js"></script>
   <script src="js/jquery.disableAutoFill.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/send.js"></script>
 </body>
